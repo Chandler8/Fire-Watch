@@ -30,3 +30,27 @@ body {
   margin-top: -50px;
   align-items: center;
 }
+
+.location-info {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 400px;
+  min-height: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  font-size: 18px;
+  color: aliceblue;
+
+}
+
+.location-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.location-info li {
+  padding: 5px 0;
+}
+
