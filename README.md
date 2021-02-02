@@ -23,7 +23,7 @@ so that
 
 ## Deployment
 
-This app is deployed [here](http://space-voyager.herokuapp.com/)
+This app is deployed [here](https://global-fire-watch.herokuapp.com/)
 
 
 ## Installation
