@@ -3,8 +3,15 @@
 import GoogleMapReact from 'google-map-react'
 import LocationMarker from './LocationMarker'
 
+// Loop through the location marker and retrieve the data for each event we want to highlight
+const Map = ({ eventData, center, zoom }) => {
+    const markers = eventData.map(ev => {
+        if(ev.categories[0].id === 8) {
+            return  <LocationMarker lat={ev.geometries[0].coordinates[1]}  lng={ev.geometries[0].coordinates[0]} />
+        }
+    })
 
-const Map = ({ center, zoom }) => {
+
     return (
         <div className="map">
             <GoogleMapReact
@@ -12,7 +19,7 @@ const Map = ({ center, zoom }) => {
             defaultCenter={ center }
             defaultZoom={ zoom }
             >
-                <LocationMarker lat={center.lat} lng={center.lng} />
+               {markers}
                 </GoogleMapReact>
         </div>
     )
