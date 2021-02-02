@@ -36,10 +36,10 @@ const Map = ({ eventData, center, zoom }) => {
 // This location can be edited, it is just a spot in California near common Wildfire zones
 Map.defaultProps = {
     center: {
-        lat: 42.3265, 
-        lng: -122.8756
+        lat: 39.8283, 
+        lng: -98.5795
     },
-    zoom: 6
+    zoom: 4
 }
 
 export default Map
