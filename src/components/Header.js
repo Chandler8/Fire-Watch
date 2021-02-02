@@ -7,7 +7,7 @@ export const Header = () => {
         // Give icon a prop
         <header className="header">
             
-            <h1><Icon icon={locationIcon} /> Global Fire Watch </h1>
+            <h1><Icon icon={locationIcon} /> Fire Watch </h1>
             
         </header>
     )
